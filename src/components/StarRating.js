@@ -19,7 +19,8 @@ const StarRating = ({ noOfStars = 5 }) => {
   }
 
   return (
-    <div>
+    <div className="container">
+      <div className="star-rating">
       {[...Array(noOfStars)].map((_, index) => {
         index += 1;
         return (
@@ -33,6 +34,7 @@ const StarRating = ({ noOfStars = 5 }) => {
           />
         );
       })}
+      </div>
     </div>
   );
 };
